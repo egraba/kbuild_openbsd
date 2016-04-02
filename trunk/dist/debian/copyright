@@ -1,0 +1,43 @@
+This package was debianized by Torsten Werner <twerner@debian.org> on
+Sat May  5 14:23:24 CEST 2007.
+
+It was downloaded from http://svn.netlabs.org/kbuild
+
+Upstream Author:
+2004-2010 knut st. osmundsen <bird-kBuild-spamx@anduin.net>
+
+Copyright:
+(C) 2004-2010 knut st. osmundsen <bird-kBuild-spamx@anduin.net>
+
+License:
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+On Debian systems, the complete text of the GNU General Public License can be
+found in `/usr/share/common-licenses/GPL'.
+
+
+kBuild ships modified sources of ash, make and sed.
+
+NetBSD ash is Copyright (C) 1993 The Regents of the University of California.  ash is
+licensed under the BSD license, see `/usr/share/common-licenses/BSD'.
+
+GNU make is Copyright (C) 2007  Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+GNU sed is Copyright (C) 2003 Free Software Foundation, Inc.
+licensed under the GPL, see `/usr/share/common-licenses/GPL`.
+
+The Debian packaging is (C) 2007, Torsten Werner <twerner@debian.org> and is
+licensed under the GPL, see `/usr/share/common-licenses/GPL'.
