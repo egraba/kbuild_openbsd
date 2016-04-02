@@ -1,6 +1,0 @@
-#!/bin/sh
-
-trap 'echo "trap-term-1: caught SIGTERM"; exit 0' TERM
-kill -TERM $$
-exit 2
-
