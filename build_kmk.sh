@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Builds OpenBSD binaries (amd64).
+# Builds kmk when no kmk already exists.
 #
 
 cp -Rf changes/* trunk/
@@ -16,13 +16,13 @@ mkdir -p trunk/src/kmk/obj
 cd trunk/src/kmk/obj
 ../configure && gmake
 if [ "$?" = "0" ]; then
-    cp kmk ../../../kBuild/bin/openbsd.amd64
-    cp kmk_redirect ../../../kBuild/bin/openbsd.amd64
+    cp -f kmk ../../../kBuild/bin/openbsd.amd64
+    cp -f kmk_redirect ../../../kBuild/bin/openbsd.amd64
 else
     echo "-> Compilation of kmk failed..."
     exit 1
 fi
 cd ../../../..
 
-cp /usr/local/bin/gsed trunk/kBuild/bin/openbsd.amd64/sed
-cp /usr/local/bin/bash trunk/kBuild/bin/openbsd.amd64/kmk_ash
+cp -f /usr/local/bin/gsed trunk/kBuild/bin/openbsd.amd64/sed
+cp -f /usr/local/bin/bash trunk/kBuild/bin/openbsd.amd64/kmk_ash
