@@ -16,10 +16,11 @@ mkdir -p trunk/src/kmk/obj
 cd trunk/src/kmk/obj
 ../configure && gmake
 if [ "$?" = "0" ]; then
+    echo "--> Compilation of kmk succeeded!"
     cp -f kmk ../../../kBuild/bin/openbsd.amd64
     cp -f kmk_redirect ../../../kBuild/bin/openbsd.amd64
 else
-    echo "-> Compilation of kmk failed..."
+    echo "--> Compilation of kmk failed..."
     exit 1
 fi
 cd ../../../..
