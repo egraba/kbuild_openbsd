@@ -40,3 +40,4 @@ cd trunk/src
 compile lib
 compile kmk
 compile kash
+compile sed
