@@ -1,6 +1,0 @@
-#!/bin/sh
-
-trap 'echo "trap-int-1: caught SIGINT"; exit 0' INT
-kill -INT $$
-exit 2
-
