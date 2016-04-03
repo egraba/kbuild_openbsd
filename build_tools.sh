@@ -41,3 +41,6 @@ compile lib
 compile kmk
 compile kash
 compile sed
+compile kDepPre
+compile kObjCache
+compile misc
